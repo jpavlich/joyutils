@@ -1,0 +1,30 @@
+{
+    "name": "joyutils",
+    "version": "1.0.0",
+    "description": "Some helper classes to make it easier to implement joystick controllers on STM32F1",
+    "keywords": "joystick, usbcomposite, STM32F1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jpavlich/joyutils.git"
+    },
+    "authors": [
+        {
+            "name": "Jaime A. Pavlich-mariscal",
+            "email": "jaime.pavlich@gmail.com",
+            "url": "https://sites.google.com/view/jpavlich/jaime-a-pavlich-mariscal"
+        }
+    ],
+    "license": "GPL v3",
+    "dependencies": [
+        {
+            "name": "USBComposite_stm32f1",
+            "version": "https://github.com/arpruss/USBComposite_stm32f1.git"
+        },
+        {
+            "name": "Arduino_STM32",
+            "version": "https://github.com/jpavlich/Arduino_STM32.git"
+        }
+    ],
+    "frameworks": "arduino",
+    "platforms": "ststm32"
+}
