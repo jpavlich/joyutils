@@ -22,5 +22,11 @@
         }
     ],
     "frameworks": "arduino",
-    "platforms": "ststm32"
+    "platforms": "ststm32",
+    "export": {
+        "include":
+        [
+            "include/*.h"
+        ]
+    }
 }
