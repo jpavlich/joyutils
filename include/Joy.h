@@ -8,8 +8,6 @@
 
 const auto DATA_SIZE = sizeof(JoystickReport_t) - 1;
 
-const float THROTTLE_MIN = (32767 - 16852) >> 4;
-const float THROTTLE_MAX = (32767 + 10383) >> 4;
 
 class Joy : public HIDJoystick
 {
@@ -18,7 +16,7 @@ public:
     std::vector<AnalogValue> axes;
     std::vector<int> button_pins;
 
-    Joy(USBHID &_HID, const std::vector<AnalogValue>& axes, const std::vector<int>& button_pins)
+    Joy(USBHID &_HID, std::vector<AnalogValue>&& axes, std::vector<int>&& button_pins)
         : HIDJoystick(_HID), axes(axes), button_pins(button_pins)
     {
     }

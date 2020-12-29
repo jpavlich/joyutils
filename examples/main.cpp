@@ -5,6 +5,11 @@
 #include <AnalogValue.h>
 #include <vector>
 #define LED_BUILTIN PB12
+
+const float THROTTLE_MIN = (32767 - 16852) >> 4;
+const float THROTTLE_MAX = (32767 + 10383) >> 4;
+
+
 USBHID HID;
 Joy joystick(HID,
              {

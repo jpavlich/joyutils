@@ -36,7 +36,7 @@ public:
     AnalogValue(uint16_t pin,
                 float min_val = 0,
                 float max_val = MAX_AXIS,
-                float window_size = 256,
+                float window_size = 128,
                 float subdiv = 16) : pin(pin),
                                      min_val(min_val),
                                      max_val(max_val),

@@ -27,7 +27,7 @@ protected:
     unsigned long deadtime, deadtimeOld, controlTime, controlTimeOld;
     unsigned long now;
 
-    byte caution = 0, warning = 0, id;
+    uint8_t caution = 0, warning = 0, id;
 
     HandShakePacket handshakePkt;
     VesselData vesselData;
@@ -35,7 +35,7 @@ protected:
 
     uint8_t rx_len;
     uint16_t *address;
-    byte buffer[256]; //address for temporary storage and parsing buffer
+    uint8_t buffer[256]; //address for temporary storage and parsing buffer
     uint8_t structSize;
     uint8_t rx_array_inx; //index for RX parsing buffer
     uint8_t calc_CS;      //calculated Chacksum
