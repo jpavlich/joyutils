@@ -19,10 +19,6 @@
         {
             "name": "USBComposite_stm32f1",
             "version": "https://github.com/arpruss/USBComposite_stm32f1.git"
-        },
-        {
-            "name": "Arduino_STM32",
-            "version": "https://github.com/jpavlich/Arduino_STM32.git"
         }
     ],
     "frameworks": "arduino",
